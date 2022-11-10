@@ -64,8 +64,8 @@ export default class PracticeLayout extends React.Component {
             <Menu.Item key="/details" icon={<FileDoneOutlined />}>
               <Link to="/details">Property Details</Link>
             </Menu.Item>
-            <Menu.Item key="/details" icon={<LogoutOutlined />}>
-              <Link to="/details">Logout</Link>
+            <Menu.Item key="/logout" icon={<LogoutOutlined />}>
+              <Link to="/logout">Logout</Link>
             </Menu.Item>
           </Menu>
         </Sider>

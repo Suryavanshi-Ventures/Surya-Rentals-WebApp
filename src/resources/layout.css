@@ -1,97 +1,159 @@
-
-
-  /*
+/*
 All css design from layout are made here
 this changes will apply on Defaultlayout.js*/
 
-
 #components-layout-demo-custom-trigger .trigger {
-    padding: 0 24px;
-    font-size: 18px;
-    line-height: 64px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+}
+.ant-layout-has-sider {
+  padding: 15px !important;
+}
+.ant-layout-sider {
+  border-radius: 10px !important;
+}
+
+.ant-layout-sider-children {
+  padding-top: 15px;
+  padding-right: 20px;
+  height: 95vh;
+}
+.ant-layout-header {
+  margin: 0 10px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.anticon svg {
+  height: 20px;
+  width: 20px;
+  font-size: 25px;
+}
+.title {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+}
+.username h5 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.ant-menu-item-selected {
+  background-color: #5890ff !important;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.logout {
+  align-items: center;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.currentBalance{
+  padding: 10px;
+  border-top: 12px solid rgb(35, 175, 42);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+
+}
+.maintenence{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid orange;
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+
+}
+
+.lease-dates p{
+  background-color: rgb(196, 196, 196);
+  font-weight: bold;
   
-  #components-layout-demo-custom-trigger .trigger:hover {
-    color: #1890ff;
-  }
-  
-  #components-layout-demo-custom-trigger .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 3px #ccc;
-  }
-  .ant-layout-has-sider{
-    padding: 15px !important;
-  }
-  .ant-layout-sider{
-    border-radius: 10px !important;
-  }
+}
+.current-lease{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid purple;
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+.renter-insurance{
+ margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid rgb(252, 67, 175);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
 
-  .ant-layout-sider-children{
-    padding-top: 15px;
-    padding-right: 20px;
-    height: 95vh;
+}
 
-  }
-  .ant-layout-header{
-   
-    margin: 0 10px !important;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    justify-content: space-between;
-  }
+.paymentMethod{
+  padding: 10px;
+  border-top: 12px solid rgb(39, 110, 202);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
 
-  .anticon svg{
-    height: 20px;
-    width: 20px;
-    font-size: 25px;
-  }
-  .title{
-    color: red;
-    font-weight: bold;
-    text-align: center;
-    font-size: 10px;
-    
-  }
-  .username h5{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  .ant-menu-item-selected{
-    background-color: #5890ff !important;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  .logout {
-    align-items: center;
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 15px;
-  }
+}
 
-  .form-contact {
-    padding-right: 20%;
-    border-top:8px solid rgb(66, 84, 94); 
-    border-bottom:8px solid rgb(66, 84, 94); 
-    border-radius: 10px;
-    padding-top: 10px;
-    box-shadow: 0 0 10px #ccc;
-    margin-right: 100px;
-    margin-left: 100px;
+.form-contact {
+  padding: 10px;
+  border-top: 12px solid rgb(39, 110, 202);
+  background-color: white;
 
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
 
+.mydiv1 {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.mydiv {
+  padding: 20px;
+  margin: 10px;
+}
 
-  }
-  
-  
+.contentcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -88,8 +88,8 @@ const App = () => {
           width: 70,
         }}
       >
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
+        <Option value="86">+91</Option>
+        <Option value="87">+977</Option>
       </Select>
     </Form.Item>
   );
@@ -106,19 +106,8 @@ const App = () => {
     </Form.Item>
   );
   const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-  const onWebsiteChange = (value) => {
-    if (!value) {
-      setAutoCompleteResult([]);
-    } else {
-      setAutoCompleteResult(
-        [".com", ".org", ".net"].map((domain) => `${value}${domain}`)
-      );
-    }
-  };
-  const websiteOptions = autoCompleteResult.map((website) => ({
-    label: website,
-    value: website,
-  }));
+  
+  
   return (
     <Form
       {...formItemLayout}
@@ -259,77 +248,82 @@ const App = () => {
         </Row>
       </Form.Item>
 <Form.Item
- name="donation"
- label="Rental information"
+
+ label="Vehical information"
 ></Form.Item>
 
-      <Form.Item
-        name="donation"
-        label="Donation"
+<Form.Item
+        name="Make"
+        label="Make"
         rules={[
           {
             required: true,
-            message: "Please input donation amount!",
+            message: "Please input your address!",
+            whitespace: true,
           },
         ]}
       >
-        <InputNumber
-          addonAfter={suffixSelector}
-          style={{
-            width: "100%",
-          }}
-        />
+        <Input />
       </Form.Item>
-
       <Form.Item
-        name="website"
-        label="Website"
+        name="model"
+        label="Model"
         rules={[
           {
             required: true,
-            message: "Please input website!",
+            message: "Please input model of vehical!",
           },
         ]}
       >
-        <AutoComplete
-          options={websiteOptions}
-          onChange={onWebsiteChange}
-          placeholder="website"
-        >
-          <Input />
-        </AutoComplete>
+        <Input />
       </Form.Item>
 
       <Form.Item
         name="intro"
-        label="Intro"
+        label="License Number"
         rules={[
           {
             required: true,
-            message: "Please input Intro",
+            message: "Please input License number",
           },
         ]}
       >
-        <Input.TextArea showCount maxLength={100} />
+        <Input/>
       </Form.Item>
 
-      <Form.Item
-        name="gender"
-        label="Gender"
-        rules={[
-          {
-            required: true,
-            message: "Please select gender!",
-          },
-        ]}
-      >
-        <Select placeholder="select your gender">
-          <Option value="male">Male</Option>
-          <Option value="female">Female</Option>
-          <Option value="other">Other</Option>
-        </Select>
+      <Form.Item label="Color">
+        <Row gutter={8}>
+          <Col span={12}>
+            <Form.Item
+              name="color"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input color!",
+                  whitespace: true,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item
+              name="Year"
+              label="Year"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input Year!",
+                  whitespace: true,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+          </Col>
+        </Row>
       </Form.Item>
-
      
       <Form.Item {...tailFormItemLayout}>
         <Button type="primary" htmlType="submit">
@@ -337,6 +331,7 @@ const App = () => {
         </Button>
       </Form.Item>
     </Form>
+    
   );
 };
 export default App;
