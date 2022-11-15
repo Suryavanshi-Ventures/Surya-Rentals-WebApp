@@ -100,6 +100,46 @@ background-color: white;
   font-weight: bold;
   
 }
+
+.SharedDocuments{
+  background-color: rgb(235, 235, 235);
+  font-weight: bold;
+  height: 50px;
+ padding: 10px;
+ 
+  
+}
+
+.headDoc th,
+.headDoc td {
+    padding: 12px 15px;
+}
+.headDoc thead tr{
+  background-color: rgb(229, 226, 226);
+  
+}
+
+.headDoc {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 100%;
+  
+}
+.ShareDocumentsCard{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid rgb(105, 33, 221);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+
+}
+
+
 .current-lease{
   margin-bottom: 10px;
   padding: 10px;
@@ -156,4 +196,35 @@ background-color: white;
 .contentcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.layout{
+  background-color: rgb(246, 253, 255);
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.logoCard{
+  display: inline-block;
+}
+.cardLogin{
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70%;
+  min-width: 30%;
+  background-color: white;
+  background-position:center ;
+  position: fixed;
+  background-size: cover;
+}
+.loginConst{
+  padding: 50px;
 }

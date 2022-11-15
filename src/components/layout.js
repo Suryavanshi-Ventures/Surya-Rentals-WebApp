@@ -15,6 +15,7 @@ import {
   FileDoneOutlined,
   BellOutlined,
   LogoutOutlined,
+  FileSyncOutlined
 } from "@ant-design/icons";
 
 const { Header, Sider, Content } = Layout;
@@ -57,6 +58,9 @@ export default class PracticeLayout extends React.Component {
             </Menu.Item>
             <Menu.Item key="/profile" icon={<UserOutlined />}>
               <Link to="/profile">Account Profile</Link>
+            </Menu.Item>
+            <Menu.Item key="/documents" icon={<FileSyncOutlined />}>
+              <Link to="/documents">Shared Documents</Link>
             </Menu.Item>
             <Menu.Item key="/insurance" icon={<InsuranceOutlined />}>
               <Link to="/insurance">Insurance</Link>
