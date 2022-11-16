@@ -37,7 +37,7 @@ export default class PracticeLayout extends React.Component {
         <Sider trigger={null} collasible collapsed={this.state.collapsed}>
           <div className="username">
             <div className="title">HELLO!</div>
-            <h5>Akash suryavanshi</h5>
+            <h5 className="header-name">Akash suryavanshi</h5>
           </div>
           <Menu
             theme="dark"
@@ -68,8 +68,8 @@ export default class PracticeLayout extends React.Component {
             <Menu.Item key="/details" icon={<FileDoneOutlined />}>
               <Link to="/details">Property Details</Link>
             </Menu.Item>
-            <Menu.Item key="/logout" icon={<LogoutOutlined />}>
-              <Link to="/logout">Logout</Link>
+            <Menu.Item key="/login" icon={<LogoutOutlined />}>
+              <Link to="/login">Logout</Link>
             </Menu.Item>
           </Menu>
         </Sider>
