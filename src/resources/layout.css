@@ -2,6 +2,7 @@
 All css design from layout are made here
 this changes will apply on Defaultlayout.js*/
 
+
 #components-layout-demo-custom-trigger .trigger {
   padding: 0 24px;
   font-size: 18px;
@@ -168,6 +169,7 @@ background-color: white;
   box-shadow: 0 0 10px #ccc;
 }
 .renter-insurance{
+  
  margin-bottom: 10px;
   padding: 10px;
   border-top: 12px solid rgb(252, 67, 175);
@@ -204,6 +206,7 @@ background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
+  
 }
 .mydiv {
   padding: 20px;
@@ -211,8 +214,11 @@ background-color: white;
 }
 
 .contentcontainer {
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  
 }
 .layout{
   background-color: rgb(246, 253, 255);
@@ -228,6 +234,7 @@ background-color: white;
 }
 .logoCard{
   display: inline-block;
+  
 }
 .cardLogin{
   border-radius: 5px;
@@ -245,13 +252,11 @@ background-color: white;
 .loginConst{
   padding: 50px;
 }
-@media only screen and (max-width: 280px) {
-  .header-name {
-      font-size:12px;
-      
-      color: red;
-    }
-  }
+.header-name{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1rem;
+}
   .property-detils{
     padding: 10px;
   border-top: 12px solid rgb(45, 0, 128);
@@ -293,3 +298,147 @@ background-color: white;
     
 
   }
+
+  .card-container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+
+
+  }
+  .section-cards{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card{
+    flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20px);
+    width: 100%;
+    background: blue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 2px solid transparent;
+
+  }
+  .card:hover{
+    border-color: red;
+  }
+
+
+  @media (max-width: 600px){
+    .card{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.wrapper>*{
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+
+.header{
+  background:tomato;
+  height: 120px;
+
+}
+
+.main{
+ 
+  background: deepskyblue;
+  height: 300px;
+  font-size: 24px;
+}
+
+.aside1{
+  padding: 10px;
+  border-top: 12px solid rgb(35, 175, 42);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.aside2{
+  padding: 10px;
+  border-top: 12px solid rgb(236, 40, 122);
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.aside3{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid purple;
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.aside4{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 12px solid orange;
+  margin-top: 20px;
+background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px #ccc;
+
+}
+@media all and (min-width: 800px)
+  {
+    .main{
+      flex: 3;
+    }
+
+    .aside1{
+      order: 1;
+    }
+
+    .aside2{
+      order: 2;
+    }
+
+    .aside3{
+      order: 1
+    }
+    .aside4{
+      order: 2
+    }
+
+   
+   
+  }
+@media all and (min-width:600px) {
+  .aside{
+    flex: 1;
+  }
+ 
+}

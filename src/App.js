@@ -10,6 +10,7 @@ import PropertyDetails from "./pages/PropertyDetails";
 import Insurance from "./pages/Insurance";
 import Login from "./pages/Login";
 import SharedDocuments from "./pages/SharedDocuments";
+
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
           {<Route path="/login" element={<Login />} /> }
           {<Route path="/documents" element={<SharedDocuments />} /> }
           {<Route path="/signup" element={<Signup />} /> }
+         
           
 
         </Routes>

@@ -7,29 +7,21 @@ function Homepage() {
   return (
     <PracticeLayout>
       <h1>Homepage</h1>
-      <div className="contentcontainer">
-        <div className="mydiv1">
-          <div className="currentBalance">
+      <div class="wrapper">
+          <aside class="aside aside1">
             <h4>Your Current Balance</h4>
             <h6>There is nothing for you to pay.</h6>
             <Button type="primary">Pay now</Button>
             <br />
             <br />
             <br />
+            
+            
             <h5>You have no current bills.</h5>
-          </div>
-          <div className="current-lease">
-            <h5>Current Lease</h5>
-            <br />
-          
-            <div className="lease-dates">  <p>Lease Dates	</p></div>
-            <h7>09/10/2022 -	</h7> <Button type="dashed">View lease online</Button>
-          </div>
-          
-        </div>
-        <div className="mydiv1">
-          <div className="renter-insurance">
-            <h4>
+          </aside>
+
+          <aside class="aside aside2">
+          <h4>
               <HomeOutlined /> Renters Insurance
             </h4>
             <p>
@@ -37,18 +29,29 @@ function Homepage() {
               portal.
             </p>
             <br />
-            <Button type="primary">Purchase Rental insurance</Button>&nbsp;
+            <Button type="primary">Purchase</Button>&nbsp;
             &nbsp;
             <Button>Learn More</Button>
-          </div>
+          </aside>
+        </div>
+        <div class="wrapper">
+          <aside class="aside aside3">
+            <h5>Current Lease</h5>
+            <br />
+            <div className="lease-dates">
+            
+              <p>Lease Dates </p>
+            </div>
+            <h7>09/10/2022 - </h7>
+            <Button type="dashed">View lease online</Button>
+          </aside>
 
-          <div className="maintenence">
+          <aside class="aside aside4">
             <h5>Maintenance Requests</h5>
             <br />
             <p>You currently do not have any open maintenance requests.</p>
-          </div>
+          </aside>
         </div>
-      </div>
     </PracticeLayout>
   );
 }
